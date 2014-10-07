@@ -68,15 +68,17 @@
     </nav>
 
     <!-- Header -->
-    <header id="top" class="header">
+    <header id="top" class="col-lg-12 header">
         <div class="text-vertical-center">
             <div id="headerContainer">
                 <div id="logoDiv"></div>
-                    <h3><ul id="highlights">
+
+                    <ul id="highlights">
                         <li>Electrical industrial design and execution</li>
                          <li>Industrial maintenance services</li>
                          <li>Software design and integration services</li>
-                        </ul></h3>
+                        </ul>
+
                 <br>
                 <a href="#about" class="btn btn-dark btn-lg">Find Out More</a>
             </div>
@@ -89,16 +91,10 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2>We will take care of all your maintenance and integration related problems so that you focus on your business</h2>
-<!--                    <p class="lead">This theme features some wonderful photography courtesy of <a target="_blank" href="http://join.deathtothestockphoto.com/">Death to the Stock Photo</a>.</p>-->
                 </div>
             </div>
-            <!-- /.row -->
         </div>
-        <!-- /.container -->
     </section>
-
-    <!-- Services -->
-    <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
     <section id="services" class="services bg-primary">
         <div class="container">
             <div class="row text-center">
@@ -121,7 +117,7 @@
                                 <p>Mission Critical Facility Maintenance</p>
                                 <p>Service Contracts</p>
                                 <p>Generator/UPS Installations</p>
-                                <a href="#" class="btn btn-light">Learn More</a>
+<!--                                <a href="#" class="btn btn-light">Learn More</a>-->
                             </div>
                         </div>
                         <div class="col-md-4 col-sm-6">
@@ -137,7 +133,6 @@
                                 <p>Electrical & Electronics Control Design</p>
                                 <p>Building Electrical Design and drafting</p>
                                 <p>Lighting System Design</p>
-                                <a href="#" class="btn btn-light">Learn More</a>
                             </div>
                         </div>
                         <div class="col-md-4 col-sm-6">
@@ -154,17 +149,12 @@
                                 <p>Mobile Development</p>
                                 <p>Software Testing</p>
                                 <p>Software Design Services</p>
-                                <a href="#" class="btn btn-light">Learn More</a>
                             </div>
                         </div>
                     </div>
-                    <!-- /.row (nested) -->
                 </div>
-                <!-- /.col-lg-10 -->
             </div>
-            <!-- /.row -->
         </div>
-        <!-- /.container -->
     </section>
 
     <!-- Callout -->
@@ -311,15 +301,15 @@
         
     });
         $(document).ready(function() {
-          
-            $("#highlights").simplecarousel({
-                next: $('.next'),
-                prev: $('.prev'),
-                fade: 700,
-                auto: 5000,
-                width: 580,
-                height: 280
-            });
+            var width = $(document).width() - 50 ;
+            if(width > 400){
+                $("#highlights").simplecarousel({
+                    fade: 700,
+                    auto: 4000,
+                    width: width,
+                    height: 280
+                });
+            }
                 
                 
         });
