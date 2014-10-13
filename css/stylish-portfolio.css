@@ -11,58 +11,49 @@ body {
     width: 100%;
     height: 100%;
 }
-
 body {
-    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-
 .text-vertical-center {
     display: table-cell;
     text-align: center;
     vertical-align: middle;
 }
-
 .text-vertical-center h1 {
     margin: 0;
     padding: 0;
     font-size: 4.5em;
     font-weight: 700;
 }
-
 /* Custom Button Styles */
 
 .btn-dark {
     border-radius: 0;
     color: #fff;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0, 0, 0, 0.4);
 }
-
 .btn-dark:hover,
 .btn-dark:focus,
 .btn-dark:active {
     color: #fff;
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0, 0, 0, 0.7);
 }
-
 .btn-light {
     border-radius: 0;
     color: #333;
-    background-color: rgb(255,255,255);
+    background-color: rgb(255, 255, 255);
 }
-
 .btn-light:hover,
 .btn-light:focus,
 .btn-light:active {
     color: #333;
-    background-color: rgba(255,255,255,0.8);
+    background-color: rgba(255, 255, 255, 0.8);
 }
-
 /* Custom Horizontal Rule */
 
 hr.small {
     max-width: 100px;
 }
-
 /* Side Menu */
 
 #sidebar-wrapper {
@@ -80,7 +71,6 @@ hr.small {
     -o-transition: all 0.4s ease 0s;
     transition: all 0.4s ease 0s;
 }
-
 .sidebar-nav {
     position: absolute;
     top: 0;
@@ -89,51 +79,42 @@ hr.small {
     padding: 0;
     list-style: none;
 }
-
 .sidebar-nav li {
     text-indent: 20px;
     line-height: 40px;
 }
-
 .sidebar-nav li a {
     display: block;
     text-decoration: none;
     color: #999;
 }
-
 .sidebar-nav li a:hover {
     text-decoration: none;
     color: #fff;
-    background: rgba(255,255,255,0.2);
+    background: rgba(255, 255, 255, 0.2);
 }
-
 .sidebar-nav li a:active,
 .sidebar-nav li a:focus {
     text-decoration: none;
 }
-
 .sidebar-nav > .sidebar-brand {
     height: 55px;
     font-size: 18px;
     line-height: 55px;
 }
-
 .sidebar-nav > .sidebar-brand a {
     color: #999;
 }
-
 .sidebar-nav > .sidebar-brand a:hover {
     color: #fff;
     background: none;
 }
-
 #menu-toggle {
     z-index: 1;
     position: fixed;
     top: 0;
     right: 0;
 }
-
 #sidebar-wrapper.active {
     right: 250px;
     width: 250px;
@@ -143,11 +124,9 @@ hr.small {
     -o-transition: all 0.4s ease 0s;
     transition: all 0.4s ease 0s;
 }
-
 .toggle {
     margin: 5px 5px 0 0;
 }
-
 /* Header */
 
 .header {
@@ -155,29 +134,29 @@ hr.small {
     position: relative;
     width: 100%;
     height: 100%;
-    background: url(../img/leaf.jpg) no-repeat center center scroll;
+    background: url(../img/earth2.jpg) no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
 }
-
 /* About */
 
 .about {
     padding: 50px 0;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 1px;
 }
-
 /* Services */
 
 .services {
     padding: 50px 0;
 }
-
 .service-item {
     margin-bottom: 30px;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 1px;
 }
-
 /* Callout */
 
 .callout {
@@ -191,80 +170,83 @@ hr.small {
     background-size: cover;
     -o-background-size: cover;
 }
-
 /* Portfolio */
 
 .portfolio {
     padding: 50px 0;
 }
-
 .portfolio-item {
     margin-bottom: 30px;
 }
-
 .img-portfolio {
     margin: 0 auto;
 }
-
 .img-portfolio:hover {
     opacity: 0.8;
 }
-
 /* Call to Action */
 
 .call-to-action {
     padding: 50px 0;
 }
-
 .call-to-action .btn {
     margin: 10px;
 }
-
 /* Map */
 
 .map {
     height: 500px;
 }
-
-@media(max-width:768px) {
-    .map {
-        height: 75%;
-    }
-}
-
 /* Footer */
 
 footer {
     padding: 100px 0;
 }
-
-.typed-cursor{
+.typed-cursor {
     opacity: 1;
     -webkit-animation: blink 0.7s infinite;
     -moz-animation: blink 0.7s infinite;
     animation: blink 0.7s infinite;
 }
-@keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
-@-webkit-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
+@-webkit-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
-@-moz-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
+@-moz-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
-
-.cta{
+.cta {
     font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 1px;
 }
-
-#logoDiv{
+#logoDiv {
     background: url('../img/logo.png') no-repeat center;
     width: 100%;
     min-height: 130px;
@@ -273,14 +255,12 @@ footer {
     align-content: center;
     margin-right: auto;
 }
-
-.carousel-frame{
+.carousel-frame {
     margin-left: auto;
     margin-right: auto;
-    height:100px !important;
+    height: 100px !important;
 }
-
-#highlights li{
+#highlights li {
     color: rgb(0, 66, 50);
     text-shadow: white 1px 1px 1px;
     list-style: none;
@@ -288,22 +268,42 @@ footer {
     font-size: 28px;
     font-weight: 400;
 }
-
-#headerContainer{
-    background: rgba(255, 255, 255, 0.62);
+#headerContainer {
+    background: rgba(255, 255, 255, 0.85);
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 1px;
+    border-radius: 30px;
+    padding-top: 40px;
+}
+#ourContact {
+    margin-bottom: 25%;
+    margin-top: 23%;
 }
 
-
-@media (max-width: 500px) {
-    #logoDiv{
-        background-size: 100%;
+@media(max-width:768px) {
+    .map {
+        height: 75%;
     }
-    #highlights li{
-        font-size: 18px;
-        margin-left: -40px;
-        height:80px !important
-    }
-    .cta{
+    .cta {
         font-size: 17px;
     }
+    #ourContact {
+        margin-bottom: 0%;
+        margin-top: 0%;
+    }
+}
+@media (max-width: 500px) {
+    #logoDiv {
+        background-size: 100%;
+    }
+    #highlights li {
+        font-size: 18px;
+        margin-left: -40px;
+        height: 80px !important
+    }
+}
+.section-title {
+    margin-bottom: 50px;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 1px;
 }
